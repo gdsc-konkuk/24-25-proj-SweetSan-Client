@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8097DBA22D76C840000A5B8D /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8097DBA12D76C840000A5B8D /* SnapKit */; };
 		80E86B792D76C4180057C217 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 80E86B782D76C4180057C217 /* SnapKit */; };
+		80F88D2D2D77E572001F3DB7 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 80F88D2C2D77E572001F3DB7 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80F88D2D2D77E572001F3DB7 /* Alamofire in Frameworks */,
 				80E86B792D76C4180057C217 /* SnapKit in Frameworks */,
 				8097DBA22D76C840000A5B8D /* SnapKit in Frameworks */,
 			);
@@ -178,6 +180,7 @@
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				8097DBA02D76C840000A5B8D /* XCRemoteSwiftPackageReference "SnapKit" */,
+				80F88D2B2D77E572001F3DB7 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8097DA2B2D76B74F000A5B8D /* Products */;
@@ -245,8 +248,8 @@
 				INFOPLIST_FILE = SweetSan/Application/Resource/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -278,8 +281,8 @@
 				INFOPLIST_FILE = SweetSan/Application/Resource/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -512,6 +515,14 @@
 				minimumVersion = 5.7.1;
 			};
 		};
+		80F88D2B2D77E572001F3DB7 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -524,6 +535,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 80E86B772D76C4180057C217 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		80F88D2C2D77E572001F3DB7 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 80F88D2B2D77E572001F3DB7 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
